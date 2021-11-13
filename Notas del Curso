@@ -3,3 +3,34 @@ https://clearlydecoded.com/recommended-books/
 https://clearlydecoded.com/
 https://github.com/jhu-ep-coursera/fullstack-course4
 https://github.com/jhu-ep-coursera/fullstack-course4/blob/master/FAQ.md
+
+https://caniuse.com/
+https://html.spec.whatwg.org/multipage/
+https://validator.w3.org/
+
+
+Instalar Ambiente
+sudo apt update
+sudo apt install nodejs
+sudo apt install npm
+sudo npm install -g browser-sync
+# Iniciar servidor
+browser-sync start --server --directory --files "*"
+
+# Enlaces de interes
+https://es.stackoverflow.com/
+https://jsfiddle.net/
+https://css-tricks.com/
+https://codepen.io/
+
+# Todo sobre git
+http://git-scm.com/book/es/v2
+
+# Creando web page in github
+https://dargil.github.io/coursera-test/
+
+git clone git@github.com:Dargil/coursera-test.git
+git status
+git checkouth gh-pages
+https://dargil.github.io/coursera-test/site/
+
