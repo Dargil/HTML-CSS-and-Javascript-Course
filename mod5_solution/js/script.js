@@ -98,6 +98,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
       homeHtmlUrl,
       function (homeHtml) {
           var chosenCategoryShortName = chooseRandomCategory(categories)
+          console.log(chosenCategoryShortName)
           insertProperty(homeHtml,"{randomCategoryShortName}",chosenCategoryShortName.short_name);
           insertHtml("#main-content", homeHtml);
 
