@@ -97,9 +97,9 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
     $ajaxUtils.sendGetRequest(
       homeHtmlUrl,
       function (homeHtml) {
-        console.log(categories)
+        console.log(JSON.stringify(categories))
           var chosenCategoryShortName = chooseRandomCategory(categories)
-          console.log("Categoria seleccionada" + chosenCategoryShortName)
+          console.log("Categoria seleccionada" + JSON.stringify(chosenCategoryShortName))
           insertProperty(homeHtml,"{randomCategoryShortName}",chosenCategoryShortName.short_name);
           insertHtml("#main-content", homeHtml);
 
