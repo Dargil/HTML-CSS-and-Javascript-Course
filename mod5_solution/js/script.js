@@ -98,7 +98,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
       homeHtmlUrl,
       function (homeHtml) {
           var chosenCategoryShortName = chooseRandomCategory(categories)
-          html = insertProperty(homeHtml,"randomCategoryShortName",chosenCategoryShortName.short_name);
+          homeHtml = insertProperty(homeHtml,"randomCategoryShortName",chosenCategoryShortName.short_name);
           insertHtml("#main-content", homeHtml);
 
         // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
@@ -136,7 +136,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
     // Choose a random index into the array (from 0 inclusively until array length (exclusively))
     var randomArrayIndex = Math.floor(Math.random() * categories.length);
-    console.log("randon index" + randomArrayIndex)
+    // console.log("randon index" + randomArrayIndex)
     // return category object with that randomArrayIndex
     return categories[randomArrayIndex];
   }
