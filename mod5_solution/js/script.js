@@ -98,9 +98,9 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
       homeHtmlUrl,
       function (homeHtml) {
           var chosenCategoryShortName = chooseRandomCategory(categories)
-          insertProperty(homeHtml,"randomCategoryShortName",chosenCategoryShortName.short_name);
+          insertProperty(homeHtml,"{randomCategoryShortName}",chosenCategoryShortName.short_name);
           insertHtml("#main-content", homeHtml);
-          
+
         // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
         // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
         // variable's name implies it expects.
